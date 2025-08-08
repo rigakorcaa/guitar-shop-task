@@ -1,6 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Guitar-Shop Project Submission
 
-## Getting Started
+This is my completed Next.js project for the **guitar-shop** task.
+
+## Project Overview
+
+This is a 3-page guitar shop application built with Next.js and Apollo Client to fetch data from the provided GraphQL API.
+
+- **Page 1 – Guitar Brands:** Displays all guitar brands fetched from the API. Clicking a brand navigates to the models page.
+- **Page 2 – Guitar Models:** Shows models of the selected brand with a search bar to filter by name, a type filter, and pagination.
+- **Page 3 – Guitar Details:** Displays detailed specs and musicians using the selected guitar with a tabbed interface and paginated musicians list.
+
+### Additional Features
+- Styled with Tailwind CSS for a clean and responsive design.
+- Language switcher supporting English, Macedonian (MK), and Albanian (SQ).
+- Graceful handling of loading and error states.
+
+---
+
+## Setup Instructions
+
+1. Clone the repository:
+
+git clone https://github.com/rigakorcaa/guitar-shop-task.git
+
+2. Navigate into the project directory:
+
+cd guitar-shop-task 
+
+3. Install dependencies:
+
+npm install
+
+4. Run the development server:
+
+npm run dev
+
+5. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 First, run the development server:
 
