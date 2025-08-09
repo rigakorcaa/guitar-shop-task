@@ -9,7 +9,7 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-white flex items-center justify-center">
+    <div className="min-h-screen bg-white flex items-center justify-center text-gray-700">
       <div className="text-center">
         <div className="flex items-center justify-center mb-8">
           <img
