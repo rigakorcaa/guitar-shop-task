@@ -3,9 +3,9 @@
 import { useState } from "react";
 import { gql, useQuery } from "@apollo/client";
 import { useSearchParams, useRouter } from "next/navigation";
-import FilterDropdown from "@/app/components/FilterDropdown";
-import SearchInput from "@/app/components/SearchInput";
-import Footer from "@/app/components/Footer";
+import FilterDropdown from "@/components/FilterDropdown";
+import SearchInput from "@/components/SearchInput";
+import Footer from "@/components/Footer";
 
 import { useLanguage } from "@/context/LanguageContext";
 import en from "@/app/translations/en";
@@ -99,7 +99,7 @@ export default function ModelsPage() {
   const brandDesc = t.brandDesc.replace("{brandName}", brandName);
 
   return (
-    <div className="min-h-screen bg-white flex flex-col">
+    <div className="min-h-screen bg-white flex flex-col text-gray-700">
       {/* Header */}
       <header className="flex items-center pt-8 px-12">
         <a href="/brands" className="text-[#222] no-underline text-[14px] font-medium mr-6">

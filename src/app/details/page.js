@@ -3,8 +3,8 @@
 import { useState } from 'react';
 import { gql, useQuery } from '@apollo/client';
 import { useSearchParams } from 'next/navigation';
-import ModelTabs from "@/app/components/ModelTabs";
-import Footer from "@/app/components/Footer";
+import ModelTabs from "@/components/ModelTabs";
+import Footer from "@/components/Footer";
 import { useLanguage } from "@/context/LanguageContext";
 
 import en from "@/app/translations/en";
@@ -76,7 +76,7 @@ export default function DetailsPage() {
   const visibleMusicians = musicians.slice((musicianPage - 1) * MUSICIANS_PER_PAGE, musicianPage * MUSICIANS_PER_PAGE);
 
   return (
-    <div className="min-h-screen bg-white flex flex-col">
+    <div className="min-h-screen bg-white flex flex-col text-gray-700">
       {/* Header */}
       <header className="flex items-center pt-8 px-12">
         <a

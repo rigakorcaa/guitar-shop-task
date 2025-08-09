@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
-import Footer from "@/app/components/Footer";
-import BrandsGrid from "@/app/components/BrandsGrid";
-import Features from "@/app/components/Features";
+import Footer from "@/components/Footer";
+import BrandsGrid from "@/components/BrandsGrid";
+import Features from "@/components/Features";
 
 import en from "@/app/translations/en";
 import mk from "@/app/translations/mk";
@@ -18,7 +18,7 @@ export default function BrandsPage() {
   const t = allTranslations[language].brandsPage;
 
   return (
-    <div className="bg-white min-h-screen">
+    <div className="bg-white min-h-screen text-gray-700">
       {/* Header with logo */}
       <div className="flex items-center justify-start pt-8 max-w-[1200px] mx-auto relative min-h-[48px]">
         <img
